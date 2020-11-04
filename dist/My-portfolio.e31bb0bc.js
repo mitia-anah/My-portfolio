@@ -29772,65 +29772,17 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"dataList.json":[function(require,module,exports) {
-module.exports = [{
-  "id": "p1",
-  "title": "Tea Time Topic",
-  "link": "https://tea-time-topic.netlify.app/"
-}, {
-  "id": "p2",
-  "title": "Game Landing",
-  "link": "https://mitia-anah.github.io/game-landing/"
-}, {
-  "id": "p3",
-  "title": "Frontend Assessment",
-  "link": "https://mitia-anah.github.io/front-end-assessment/"
-}, {
-  "id": "p4",
-  "title": "Frontend Final",
-  "link": "https://mitia-anah.github.io/front-end-finals/ "
-}, {
-  "id": "p5",
-  "title": "Random Quote",
-  "link": "https://random-quote-by-react.netlify.app/"
-}];
-},{}],"Component/DisplayData.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _dataList = _interopRequireDefault(require("../dataList.json"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function DisplayData() {
-  let myData = _dataList.default;
-  console.log(myData);
-  const [data, setMyData] = (0, _react.useState)([]);
-  (0, _react.useEffect)(() => {
-    setMyData();
-  }, []);
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lists"
-  }, myData.map(el => /*#__PURE__*/_react.default.createElement("div", {
-    key: el.id
-  }, /*#__PURE__*/_react.default.createElement("h2", null, el.title), /*#__PURE__*/_react.default.createElement("a", {
-    href: el.link
-  }, "Memo")))));
-}
-
-var _default = DisplayData;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../dataList.json":"dataList.json"}],"App.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"assets/movieAppart1.png":[function(require,module,exports) {
+module.exports = "/movieAppart1.bbdacc96.png";
+},{}],"assets/movieAppart2.png":[function(require,module,exports) {
+module.exports = "/movieAppart2.635ce570.png";
+},{}],"assets/randomQuote1.png":[function(require,module,exports) {
+module.exports = "/randomQuote1.21b6bbc6.png";
+},{}],"assets/randomQuote2.png":[function(require,module,exports) {
+module.exports = "/randomQuote2.60e5dfff.png";
+},{}],"assets/teaTimeTopic.png":[function(require,module,exports) {
+module.exports = "/teaTimeTopic.237809e0.png";
+},{}],"Component/DataList.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29840,17 +29792,83 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _DisplayData = _interopRequireDefault(require("./Component/DisplayData"));
+var _movieAppart = _interopRequireDefault(require("../assets/movieAppart1.png"));
+
+var _movieAppart2 = _interopRequireDefault(require("../assets/movieAppart2.png"));
+
+var _randomQuote = _interopRequireDefault(require("../assets/randomQuote1.png"));
+
+var _randomQuote2 = _interopRequireDefault(require("../assets/randomQuote2.png"));
+
+var _teaTimeTopic = _interopRequireDefault(require("../assets/teaTimeTopic.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function DataList() {
+  const myList = [{
+    "id": "p1",
+    "title": "Tea Time Topic",
+    "photo": _teaTimeTopic.default,
+    "link": "https://tea-time-topic.netlify.app/"
+  }, {
+    "id": "p2",
+    "title": "Movie Appart",
+    "photo": _movieAppart2.default,
+    "link": "https://mitia-anah.github.io/game-landing/"
+  }, {
+    "id": "p3",
+    "title": "Frontend Assessment",
+    "photo": _movieAppart.default,
+    "link": "https://mitia-anah.github.io/front-end-assessment/"
+  }, {
+    "id": "p4",
+    "title": "Frontend Final",
+    "photo": _randomQuote.default,
+    "link": "https://mitia-anah.github.io/front-end-finals/ "
+  }, {
+    "id": "p5",
+    "title": "Random Quote",
+    "photo": '',
+    "link": "https://random-quote-by-react.netlify.app/"
+  }];
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "lists"
+  }, myList.map(el => /*#__PURE__*/_react.default.createElement("div", {
+    className: "card",
+    key: el.id
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: el.photo
+  }), /*#__PURE__*/_react.default.createElement("h2", null, el.title), /*#__PURE__*/_react.default.createElement("a", {
+    href: el.link
+  }, "Memo")))));
+}
+
+var _default = DataList;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../assets/movieAppart1.png":"assets/movieAppart1.png","../assets/movieAppart2.png":"assets/movieAppart2.png","../assets/randomQuote1.png":"assets/randomQuote1.png","../assets/randomQuote2.png":"assets/randomQuote2.png","../assets/teaTimeTopic.png":"assets/teaTimeTopic.png"}],"App.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _DataList = _interopRequireDefault(require("./Component/DataList"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import DisplayData from './Component/DisplayData'
 function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_DisplayData.default, null));
+  return /*#__PURE__*/_react.default.createElement("article", {
+    className: "wrapper"
+  }, /*#__PURE__*/_react.default.createElement(_DataList.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./Component/DisplayData":"Component/DisplayData.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Component/DataList":"Component/DataList.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -29890,7 +29908,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54068" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55657" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

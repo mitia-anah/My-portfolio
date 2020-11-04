@@ -1,2 +1,22 @@
+body {
+    background-color: #55423d;
+}
+.wrapper {
+    max-width: 100%;
+}
+.lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.card {
+    margin: 1rem;
+    flex-basis: 10%;
+    border: 2px solid #ffc0ad;
+    border-radius: 10px;
+    background: #fff3ec;
+}
 
 /*# sourceMappingURL=/My-portfolio.9ad09f98.css.map */

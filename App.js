@@ -1,11 +1,12 @@
 import React from 'react'
-import DisplayData from './Component/DisplayData'
-
+// import DisplayData from './Component/DisplayData'
+import DataList from './Component/DataList'
 function App() {
     return (
-        <div>
-            <DisplayData />
-        </div>
+        <article className='wrapper'>
+            {/* <DisplayData /> */}
+            <DataList />
+        </article>
     )
 }
 export default App
