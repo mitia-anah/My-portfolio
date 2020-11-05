@@ -1,10 +1,10 @@
 import React from 'react'
-// import DisplayData from './Component/DisplayData'
+import Header from './Component/Header'
 import DataList from './Component/DataList'
 function App() {
     return (
         <article className='wrapper'>
-            {/* <DisplayData /> */}
+            <Header />
             <DataList />
         </article>
     )

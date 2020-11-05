@@ -4,6 +4,37 @@ body {
 .wrapper {
     max-width: 100%;
 }
+
+header {
+    background: #140d0b;
+    display: flex;
+    flex-direction: row;
+}
+.lshine{
+    flex-basis: 30%;
+    max-width: 150px;
+    border: 1px solid;
+    background-color: #fff3ec;
+    border-radius: 50%;
+}
+.navigation {
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 2rem;
+    justify-content: flex-end;
+}
+.navigation li {
+    margin: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+.nav-list {
+    color: #e78fb3;
+    text-decoration: none;
+}
 .lists {
     display: flex;
     flex-direction: row;

@@ -29772,7 +29772,52 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"assets/movieAppart1.png":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"assets/Lshine.png":[function(require,module,exports) {
+module.exports = "/Lshine.e18e643f.png";
+},{}],"Component/Header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Lshine = _interopRequireDefault(require("../assets/Lshine.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Navigation() {
+  return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("img", {
+    className: "lshine",
+    src: _Lshine.default
+  }), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "navigation"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "nav-list",
+    href: ""
+  }, "Profile")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "nav-list",
+    href: ""
+  }, "Job")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "nav-list",
+    href: ""
+  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "nav-list",
+    href: ""
+  }, "Experiences")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "nav-list",
+    href: ""
+  }, "Background")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "nav-list",
+    href: ""
+  }, "Contact"))));
+}
+
+var _default = Navigation;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../assets/Lshine.png":"assets/Lshine.png"}],"assets/movieAppart1.png":[function(require,module,exports) {
 module.exports = "/movieAppart1.bbdacc96.png";
 },{}],"assets/movieAppart2.png":[function(require,module,exports) {
 module.exports = "/movieAppart2.635ce570.png";
@@ -29855,20 +29900,21 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Header = _interopRequireDefault(require("./Component/Header"));
+
 var _DataList = _interopRequireDefault(require("./Component/DataList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import DisplayData from './Component/DisplayData'
 function App() {
   return /*#__PURE__*/_react.default.createElement("article", {
     className: "wrapper"
-  }, /*#__PURE__*/_react.default.createElement(_DataList.default, null));
+  }, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_DataList.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./Component/DataList":"Component/DataList.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Component/Header":"Component/Header.js","./Component/DataList":"Component/DataList.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -29908,7 +29954,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55657" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63789" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
