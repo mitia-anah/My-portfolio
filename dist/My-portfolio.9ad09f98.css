@@ -1,53 +1,62 @@
-body {
-    background-color: #55423d;
-}
-.wrapper {
-    max-width: 100%;
+.app {
+
 }
 
 header {
-    background: #140d0b;
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.menu-bar {
+    background-color: #004643;
+}
+.menu-list {
     display: flex;
     flex-direction: row;
 }
-.lshine{
-    flex-basis: 30%;
-    max-width: 150px;
+.profile__content {
+    box-shadow: 20px 20px 20px 20px lightgoldenrodyellow;
+    max-width: 100%;
+    background: #ffc0ad;
+    top: 20%;
     border: 1px solid;
-    background-color: #fff3ec;
-    border-radius: 50%;
+    border-style: none;
+    position: absolute;
+    width: 500px;
 }
-.navigation {
-    display: flex;
-    flex-basis: 60%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 2rem;
-    justify-content: flex-end;
+.profile__content--img {
+   border-radius: 10px;
+   margin: 1rem;
+   padding: 1rem;
 }
-.navigation li {
-    margin: 1rem;
-    list-style: none;
-    text-transform: uppercase;
-}
-.nav-list {
-    color: #e78fb3;
-    text-decoration: none;
-}
-.lists {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2rem;
+img {
+   max-width: 100%;
 }
 
-.card {
-    margin: 1rem;
-    flex-basis: 10%;
-    border: 2px solid #ffc0ad;
-    border-radius: 10px;
-    background: #fff3ec;
+.profile__content--list {
+  
 }
+a {
+    text-decoration: none;
+    color: lightcoral;
+    font-weight: 700;
+}
+.menu {
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+li {
+    list-style: none;
+}
+.menu{
+    box-shadow: 0 0 0 2px rgba(0,255,0,1) inset,0 0 0 6px rgba(100,50,255,1) inset;
+  }
+.menu:hover{
+box-shadow:-5px 5px 0 0 #ffd803 inset, 0 0 5px 5px #ff8906 inset;
+transform: scale(0.7);
+} 
 
 /*# sourceMappingURL=/My-portfolio.9ad09f98.css.map */
