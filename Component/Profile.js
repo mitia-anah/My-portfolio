@@ -20,7 +20,6 @@ function Profile() {
                     <li className="profile">Email: Rosny.rat@onja.org / rratsianompo@Gmail.com</li>
                 </ul>
             </div>
-
         </div>
     )
 }
